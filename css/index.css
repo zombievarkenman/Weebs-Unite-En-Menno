@@ -15,16 +15,12 @@ header{
     flex-wrap: nowrap;
 }
 
-/* header > p {
+header > p {
     text-align: center;
     font-size: 1.5rem;
     line-height: 50%;
-} */
+}
 
 #logo {
     height: 15vh;
-}
-
-p {
-    font-size: 5000px;
 }
