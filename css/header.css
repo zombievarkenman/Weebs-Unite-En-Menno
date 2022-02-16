@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    background-color: #A2EFB1;
+    height: 15vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header > button {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 1.25vw;
+    margin-right: 1.25vw;
+    height: 7.5vh;
+    width: 15vw;
+    border-radius: 60px;
+    background-color: #A2EFB1;
+    border-color: black;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Balsamiq Sans', sans-serif;
+}
+
+#logo {
+    height: 15vh;
+}
