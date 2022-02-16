@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    background-color: lightgreen;
+    height: 15vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header > p {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 50%;
+}
+
+#logo {
+    height: 15vh;
+}
