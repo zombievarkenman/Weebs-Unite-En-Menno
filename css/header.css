@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-a {
+header > button > a {
     text-decoration: none;
     color: black;
 }
@@ -33,4 +33,8 @@ header > button {
 
 #logo {
     height: 15vh;
+}
+
+header > button:hover {
+    background: #008AFF;
 }
