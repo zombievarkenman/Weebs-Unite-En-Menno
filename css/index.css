@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#rekenen-foto {
+    width: 42.5vw;
+    height: 80vh;
+    border-radius: 60px;
+    margin-left: 5vw;
+    margin-top: 2.5vh;
+}
+
+#main-page-content {
+    display: flex;
+    column-gap: 5vw;
+}
+
+#box-text {
+    background-color: #008AFF;
+    width: 42.5vw;
+    height: 80vh;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5vw;
+    margin-top: 2.5vh;
+    text-align: center;
+}
+
+#presentatiepagina-link {
+    border-radius: 60px;
+    background-color: #A2EFB1;
+    padding-left: 5vw ;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
