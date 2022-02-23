@@ -7,16 +7,10 @@ function showEvenOfOneven(){
 document.getElementById("antwoordEvenOfOnevenButton").addEventListener("click",showEvenOfOneven);
 
 function showRestwaarden(){
-    let antwoordRestwaarden = restwaardenBerekening();
-    document.getElementById("antwoordRestwaarden").innerHTML = antwoordRestwaarden;
-}
-
-function restwaardenBerekening(){
-    basisGetal = document.getElementById("RestwaardenBasisGetal").value;
-    extraGetal = document.getElementById("RestwaardenExtraGetal").value;
-    while(basisGetal >=0){
-        basisGetal - extraGetal
-    }
+    let deeltalWaarden = parseInt(document.getElementById("RestwaardenDeeltal").value);
+    let delerWaarden = parseInt(document.getElementById("RestwaardenDeler").value);
+    let restwaardenAntwoord = MathMate.restwaardenUitrekenen(deeltalWaarden,delerWaarden);
+    document.getElementById("antwoordRestwaarden").innerHTML = restwaardenAntwoord;
 }
 
 document.getElementById("antwoordRestwaardenButton").addEventListener("click",showRestwaarden);

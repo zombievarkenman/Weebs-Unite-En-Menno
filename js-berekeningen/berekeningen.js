@@ -6,5 +6,10 @@ const MathMate = {
         } else {
             return "oneven";
         }
+    },
+
+    restwaardenUitrekenen: function restwaardenBerekening(deeltalWaarden,delerWaarden){
+        let restwaarden = deeltalWaarden % delerWaarden;
+        return restwaarden;
     }
 }
