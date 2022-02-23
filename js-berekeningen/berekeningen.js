@@ -17,4 +17,9 @@ const MathMate = {
         let antwoordAftrekker = aftrekker1 - aftrekker2;
         return antwoordAftrekker;
     },
+    
+    restwaardenUitrekenen: function restwaardenBerekening(deeltalWaarden,delerWaarden){
+        let restwaarden = deeltalWaarden % delerWaarden;
+        return restwaarden;
+    }
 }
