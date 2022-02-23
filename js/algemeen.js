@@ -1,20 +1,7 @@
 function showEvenOfOneven(){
-    alert(asdf);
-    let antwoordEvenOfOneven = evenOfOnevenBerekening();
-    document.getElementById("antwoordEvenOfOneven").innerHTML = antwoordEvenOfOneven;
-}
-
-function evenOfOnevenBerekening(){
     let evenOfOnevenvalue = document.getElementById("EvenOfOneven").value;
-    let evenOfOneven = even % 10;
-    let evenNummers = [0,2,4,6,8];
-    let even = "dit getal is even";
-    let oneven = "dit getal is oneven";
-    if(evenOfOneven == evenNummers){
-        return even;
-    } else {
-        return oneven;
-    }
+    let antwoordEvenOfOneven = MathMate.evenOfOnevenUitrekenen(evenOfOnevenvalue);
+    document.getElementById("antwoordEvenOfOneven").innerHTML = antwoordEvenOfOneven;
 }
 
 document.getElementById("antwoordEvenOfOnevenButton").addEventListener("click",showEvenOfOneven);
