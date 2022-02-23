@@ -1,7 +1,20 @@
 function showEvenOfOneven(){
-    let evenOfOnevenvalue = document.getElementById("EvenOfOneven").value;
-    let antwoordEvenOfOneven = MathMate.evenOfOnevenUitrekenen(evenOfOnevenvalue);
+    alert(asdf);
+    let antwoordEvenOfOneven = evenOfOnevenBerekening();
     document.getElementById("antwoordEvenOfOneven").innerHTML = antwoordEvenOfOneven;
+}
+
+function evenOfOnevenBerekening(){
+    let evenOfOnevenvalue = document.getElementById("EvenOfOneven").value;
+    let evenOfOneven = even % 10;
+    let evenNummers = [0,2,4,6,8];
+    let even = "dit getal is even";
+    let oneven = "dit getal is oneven";
+    if(evenOfOneven == evenNummers){
+        return even;
+    } else {
+        return oneven;
+    }
 }
 
 document.getElementById("antwoordEvenOfOnevenButton").addEventListener("click",showEvenOfOneven);
@@ -21,3 +34,20 @@ function restwaardenBerekening(){
 
 document.getElementById("antwoordRestwaardenButton").addEventListener("click",showRestwaarden);
 // De gebruiker kan 2 getallen invoeren, het basis getalen het getal wat er iedere keer van af gehaald wordt, en als hij op de knop “Rest” klikt, dan moet derestwaardehiervan getoond worden.
+
+
+
+
+//machtsverheffen berekeningen
+function showMachtsverheffen(){
+    let antwoordMachtsverheffen = machtsverheffenBerekening();
+    document.getElementById("antwoordMachtverheffen")
+}
+
+function machtsverheffenBerekening(){ 
+    grondtal = document.getElementById("grondtal").value;
+    exponent = document.getElementById("exponent").value;
+    grondtal ** exponent;
+}
+
+document.getElementById("antwoordMachtverheffenButton").addEventListener("click", )
