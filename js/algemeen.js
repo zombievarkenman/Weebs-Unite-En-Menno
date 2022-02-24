@@ -38,7 +38,6 @@ function showOptellen(){
 }
 document.getElementById("antwoordOptellenButton").addEventListener("click", showOptellen);
 
-<<<<<<< HEAD
 document.getElementById("antwoordRestwaardenButton").addEventListener("click",showRestwaarden);
 // De gebruiker kan 2 getallen invoeren, het basis getalen het getal wat er iedere keer van af gehaald wordt, en als hij op de knop “Rest” klikt, dan moet derestwaardehiervan getoond worden.
 
@@ -58,7 +57,6 @@ function machtsverheffenBerekening(){
 }
 
 document.getElementById("antwoordMachtverheffenButton").addEventListener("click",showMachtsverheffen);
-=======
 //Aftrekken
 function showAftrekken(){
     let aftrekker1 = parseInt(document.getElementById("Aftrekken").value);
@@ -67,4 +65,3 @@ function showAftrekken(){
     document.getElementById("antwoordAftrekken").innerHTML = aftrekkerAntwoord;
 }
 document.getElementById("antwoordAftrekkenButton").addEventListener("click", showAftrekken);
->>>>>>> 429ff241310752b7ab026f0215d39292c121f145
