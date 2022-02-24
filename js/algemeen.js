@@ -46,15 +46,13 @@ document.getElementById("antwoordRestwaardenButton").addEventListener("click",sh
 
 //machtsverheffen berekeningen
 function showMachtsverheffen(){
-    let antwoordMachtsverheffen = machtsverheffenBerekening();
+    let grondtal = document.getElementById("grondtal").value;
+    let exponent = document.getElementById("exponent").value;
+    let antwoordMachtsverheffen = MathMate.machtsverheffenUitrekenen(grondtal,exponent);
     document.getElementById("antwoordMachtverheffen").innerHTML = antwoordMachtsverheffen;
 }
 
-function machtsverheffenBerekening(){ 
-    let grondtal = document.getElementById("grondtal").value;
-    let exponent = document.getElementById("exponent").value;
-    let machtsverheffenAntwoord = grondtal **= exponent;
-}
+
 
 document.getElementById("antwoordMachtverheffenButton").addEventListener("click",showMachtsverheffen);
 //Aftrekken

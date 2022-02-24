@@ -21,5 +21,10 @@ const MathMate = {
     restwaardenUitrekenen: function restwaardenBerekening(deeltalWaarden,delerWaarden){
         let restwaarden = deeltalWaarden % delerWaarden;
         return restwaarden;
+    },
+
+    machtsverheffenUitrekenen: function machtsverheffenBerekening(grondtal,exponent){ 
+        let machtsverheffenAntwoord = grondtal **= exponent;
+        return machtsverheffenAntwoord;
     }
 }
