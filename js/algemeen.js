@@ -41,13 +41,13 @@ document.getElementById("antwoordRestwaardenButton").addEventListener("click",sh
 //machtsverheffen berekeningen
 function showMachtsverheffen(){
     let antwoordMachtsverheffen = machtsverheffenBerekening();
-    document.getElementById("antwoordMachtverheffen")
+    document.getElementById("antwoordMachtverheffen").innerHTML = antwoordMachtsverheffen;
 }
 
 function machtsverheffenBerekening(){ 
-    grondtal = document.getElementById("grondtal").value;
-    exponent = document.getElementById("exponent").value;
-    grondtal ** exponent;
+    let grondtal = document.getElementById("grondtal").value;
+    let exponent = document.getElementById("exponent").value;
+    let machtsverheffenAntwoord = grondtal **= exponent;
 }
 
-document.getElementById("antwoordMachtverheffenButton").addEventListener("click", )
+document.getElementById("antwoordMachtverheffenButton").addEventListener("click",showMachtsverheffen);
