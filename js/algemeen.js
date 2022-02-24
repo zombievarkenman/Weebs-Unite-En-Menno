@@ -1,7 +1,20 @@
 function showEvenOfOneven(){
-    let evenOfOnevenvalue = document.getElementById("EvenOfOneven").value;
-    let antwoordEvenOfOneven = MathMate.evenOfOnevenUitrekenen(evenOfOnevenvalue);
+    alert(asdf);
+    let antwoordEvenOfOneven = evenOfOnevenBerekening();
     document.getElementById("antwoordEvenOfOneven").innerHTML = antwoordEvenOfOneven;
+}
+
+function evenOfOnevenBerekening(){
+    let evenOfOnevenvalue = document.getElementById("EvenOfOneven").value;
+    let evenOfOneven = even % 10;
+    let evenNummers = [0,2,4,6,8];
+    let even = "dit getal is even";
+    let oneven = "dit getal is oneven";
+    if(evenOfOneven == evenNummers){
+        return even;
+    } else {
+        return oneven;
+    }
 }
 
 document.getElementById("antwoordEvenOfOnevenButton").addEventListener("click",showEvenOfOneven);
@@ -25,6 +38,27 @@ function showOptellen(){
 }
 document.getElementById("antwoordOptellenButton").addEventListener("click", showOptellen);
 
+<<<<<<< HEAD
+document.getElementById("antwoordRestwaardenButton").addEventListener("click",showRestwaarden);
+// De gebruiker kan 2 getallen invoeren, het basis getalen het getal wat er iedere keer van af gehaald wordt, en als hij op de knop “Rest” klikt, dan moet derestwaardehiervan getoond worden.
+
+
+
+
+//machtsverheffen berekeningen
+function showMachtsverheffen(){
+    let antwoordMachtsverheffen = machtsverheffenBerekening();
+    document.getElementById("antwoordMachtverheffen").innerHTML = antwoordMachtsverheffen;
+}
+
+function machtsverheffenBerekening(){ 
+    let grondtal = document.getElementById("grondtal").value;
+    let exponent = document.getElementById("exponent").value;
+    let machtsverheffenAntwoord = grondtal **= exponent;
+}
+
+document.getElementById("antwoordMachtverheffenButton").addEventListener("click",showMachtsverheffen);
+=======
 //Aftrekken
 function showAftrekken(){
     let aftrekker1 = parseInt(document.getElementById("Aftrekken").value);
@@ -33,3 +67,4 @@ function showAftrekken(){
     document.getElementById("antwoordAftrekken").innerHTML = aftrekkerAntwoord;
 }
 document.getElementById("antwoordAftrekkenButton").addEventListener("click", showAftrekken);
+>>>>>>> 429ff241310752b7ab026f0215d39292c121f145
