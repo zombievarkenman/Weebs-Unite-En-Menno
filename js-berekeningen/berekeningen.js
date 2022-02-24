@@ -1,4 +1,5 @@
 const MathMate = {
+
     evenOfOnevenUitrekenen: function evenOfOnevenBerekening(evenOfOnevenvalue){
         let evenOfOneven = evenOfOnevenvalue % 2;
         if(evenOfOneven == 0){
@@ -22,8 +23,15 @@ const MathMate = {
         let restwaarden = deeltalWaarden % delerWaarden;
         return restwaarden;
     },
+    
     vermenigvuldigenUitreken: function vermenigvuldigenBerekening(vermenigvuldiger1, vermenigvuldiger2){
         let antwoordVermenigvuldiger = vermenigvuldiger1 * vermenigvuldiger2;
         return antwoordVermenigvuldiger;
     },
+
+    percentageUitrekenen: function percentageBerekening(basisGetalvalue,PercentageGetalvalue) {
+        let basisgetal1Procent = basisGetalvalue / 100;
+        let antwoordPercentage = basisgetal1Procent * PercentageGetalvalue;
+        return antwoordPercentage;
+    }
 }
