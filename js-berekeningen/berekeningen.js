@@ -1,4 +1,5 @@
 const MathMate = {
+
     evenOfOnevenUitrekenen: function evenOfOnevenBerekening(evenOfOnevenvalue){
         let evenOfOneven = evenOfOnevenvalue % 2;
         if(evenOfOneven == 0){
@@ -26,5 +27,15 @@ const MathMate = {
     machtsverheffenUitrekenen: function machtsverheffenBerekening(grondtal,exponent){ 
         let machtsverheffenAntwoord = grondtal **= exponent;
         return machtsverheffenAntwoord;
+    
+    vermenigvuldigenUitreken: function vermenigvuldigenBerekening(vermenigvuldiger1, vermenigvuldiger2){
+        let antwoordVermenigvuldiger = vermenigvuldiger1 * vermenigvuldiger2;
+        return antwoordVermenigvuldiger;
+    },
+
+    percentageUitrekenen: function percentageBerekening(basisGetalvalue,PercentageGetalvalue) {
+        let basisgetal1Procent = basisGetalvalue / 100;
+        let antwoordPercentage = basisgetal1Procent * PercentageGetalvalue;
+        return antwoordPercentage;
     }
 }
