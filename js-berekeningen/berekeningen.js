@@ -43,6 +43,10 @@ const MathMate = {
     delenUitrekenen: function delenBerekening(deeltal, deler){
         let antwoordQuotiënt = deeltal / deler;
         return antwoordQuotiënt;
+    },
+    machtUitrekenen: function machtBerekening(machtValue){
+        let antwoordMacht = machtValue **2;
+        return antwoordMacht;
     }
 }
 

@@ -1,4 +1,4 @@
-//even of oneven
+//Even of oneven
 function showEvenOfOneven(){
     let evenofonevenWaarden = document.getElementById("EvenOfOneven").value;
     let antwoordEvenOfOneven = MathMate.evenOfOnevenUitrekenen(evenofonevenWaarden);
@@ -6,7 +6,7 @@ function showEvenOfOneven(){
 }
 document.getElementById("antwoordEvenOfOnevenButton").addEventListener("click",showEvenOfOneven);
 
-//restwaarden
+//Restwaarden
 function showRestwaarden(){
     let deeltalWaarden = parseInt(document.getElementById("RestwaardenDeeltal").value);
     let delerWaarden = parseInt(document.getElementById("RestwaardenDeler").value);
@@ -24,7 +24,7 @@ function showOptellen(){
 }
 document.getElementById("antwoordOptellenButton").addEventListener("click", showOptellen);
 
-//machtsverheffen
+//Machtsverheffen
 document.getElementById("antwoordRestwaardenButton").addEventListener("click",showRestwaarden);
 // De gebruiker kan 2 getallen invoeren, het basis getalen het getal wat er iedere keer van af gehaald wordt, en als hij op de knop “Rest” klikt, dan moet derestwaardehiervan getoond worden.
 
@@ -47,41 +47,31 @@ function showVermenigvuldigen(){
 }
 document.getElementById("antwoordVermedigdvuldigenButton").addEventListener("click", showVermenigvuldigen);
 
-//machtsverheffen berekeningen
+//Machtsverheffen berekeningen
 function showMachtsverheffen(){
-    let grondtal = document.getElementById("grondtal").value;
-    let exponent = document.getElementById("exponent").value;
-    let antwoordMachtsverheffen = MathMate.machtsverheffenUitrekenen(grondtal,exponent);
+    let antwoordMachtsverheffen = machtsverheffenBerekening();
     document.getElementById("antwoordMachtverheffen").innerHTML = antwoordMachtsverheffen;
 }
 
-
-
-document.getElementById("antwoordMachtverheffenButton").addEventListener("click",showMachtsverheffen);
-//Aftrekken
-function showAftrekken(){
-    let aftrekker1 = parseInt(document.getElementById("Aftrekken").value);
-    let aftrekker2 = parseInt(document.getElementById("Aftrekken2").value);
-    let aftrekkerAntwoord = MathMate.aftrekkenUitreken(aftrekker1, aftrekker2);
-    document.getElementById("antwoordAftrekken").innerHTML = aftrekkerAntwoord;
+function machtsverheffenBerekening(){ 
+    let grondtal = document.getElementById("grondtal").value;
+    let exponent = document.getElementById("exponent").value;
+    let machtsverheffenAntwoord = grondtal **= exponent;
 }
-document.getElementById("antwoordAftrekkenButton").addEventListener("click", showAftrekken);
-//percentage
+
+//Percentage
 function showPercentage() {
     let basisGetalvalue = parseInt(document.getElementById("basisGetal").value);
     let PercentageGetalvalue = parseInt(document.getElementById("PercentageGetal").value);
     let PercentageAntwoord = MathMate.percentageUitrekenen(basisGetalvalue,PercentageGetalvalue);
     document.getElementById("antwoordPercentage").innerHTML = PercentageAntwoord;
 }
-
 document.getElementById("antwoordPercentageButton").addEventListener("click",showPercentage);
 
-
-//delen
-function showDelen(){
-    let deeltal = parseInt(document.getElementById("deeltal").value);
-    let deler = parseInt(document.getElementById("deler").value);
-    let delerAntwoord = MathMate.delenUitrekenen(deeltal, deler);
-    document.getElementById("antwoordDelen").innerHTML = delerAntwoord;
+//Kwadraten
+function showKwadraat() { 
+    let machtValue = parseInt(document.getElementById("maximale-kwadraat").value);
+    let machtAntwoord = MathMate.machtBerekening(machtValue);
+    document.getElementById("antwoordKwadraten").innerHTML = machtAntwoord;
 }
-document.getElementById("antwoordDelenButton").addEventListener("click", showDelen);
+document.getElementById("antwoordKwadratenButton").addEventListener("click", showKwadraat);
