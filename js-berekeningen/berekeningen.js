@@ -21,5 +21,9 @@ const MathMate = {
     restwaardenUitrekenen: function restwaardenBerekening(deeltalWaarden,delerWaarden){
         let restwaarden = deeltalWaarden % delerWaarden;
         return restwaarden;
-    }
+    },
+    vermenigvuldigenUitreken: function vermenigvuldigenBerekening(vermenigvuldiger1, vermenigvuldiger2){
+        let antwoordVermenigvuldiger = vermenigvuldiger1 * vermenigvuldiger2;
+        return antwoordVermenigvuldiger;
+    },
 }

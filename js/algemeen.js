@@ -51,8 +51,14 @@ function showAftrekken(){
 }
 document.getElementById("antwoordAftrekkenButton").addEventListener("click", showAftrekken);
 
-
-
+//Vermenigvuldigen
+function showVermenigvuldigen(){
+    let vermenigvuldiger1 = parseInt(document.getElementById("Vermedigdvuldigen1").value);
+    let vermenigvuldiger2 = parseInt(document.getElementById("Vermedigdvuldigen2").value);
+    let vermenigvuldigerAntwoord = MathMate.vermenigvuldigenUitreken(vermenigvuldiger1, vermenigvuldiger2);
+    document.getElementById("antwoordVermedigdvuldigen").innerHTML = vermenigvuldigerAntwoord;
+}
+document.getElementById("antwoordVermedigdvuldigenButton").addEventListener("click", showVermenigvuldigen);
 
 //machtsverheffen berekeningen
 function showMachtsverheffen(){
