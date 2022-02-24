@@ -41,6 +41,16 @@ document.getElementById("antwoordOptellenButton").addEventListener("click", show
 document.getElementById("antwoordRestwaardenButton").addEventListener("click",showRestwaarden);
 // De gebruiker kan 2 getallen invoeren, het basis getalen het getal wat er iedere keer van af gehaald wordt, en als hij op de knop “Rest” klikt, dan moet derestwaardehiervan getoond worden.
 
+document.getElementById("antwoordMachtverheffenButton").addEventListener("click",showMachtsverheffen);
+//Aftrekken
+function showAftrekken(){
+    let aftrekker1 = parseInt(document.getElementById("Aftrekken").value);
+    let aftrekker2 = parseInt(document.getElementById("Aftrekken2").value);
+    let aftrekkerAntwoord = MathMate.aftrekkenUitreken(aftrekker1, aftrekker2);
+    document.getElementById("antwoordAftrekken").innerHTML = aftrekkerAntwoord;
+}
+document.getElementById("antwoordAftrekkenButton").addEventListener("click", showAftrekken);
+
 
 
 
@@ -55,13 +65,3 @@ function machtsverheffenBerekening(){
     let exponent = document.getElementById("exponent").value;
     let machtsverheffenAntwoord = grondtal **= exponent;
 }
-
-document.getElementById("antwoordMachtverheffenButton").addEventListener("click",showMachtsverheffen);
-//Aftrekken
-function showAftrekken(){
-    let aftrekker1 = parseInt(document.getElementById("Aftrekken").value);
-    let aftrekker2 = parseInt(document.getElementById("Aftrekken2").value);
-    let aftrekkerAntwoord = MathMate.aftrekkenUitreken(aftrekker1, aftrekker2);
-    document.getElementById("antwoordAftrekken").innerHTML = aftrekkerAntwoord;
-}
-document.getElementById("antwoordAftrekkenButton").addEventListener("click", showAftrekken);
