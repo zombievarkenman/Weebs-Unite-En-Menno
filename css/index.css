@@ -42,3 +42,8 @@
 #presentatiepagina-link:hover {
     background-color: yellow;
 }
+
+#box-text > p {
+    font-size: 1.5rem;
+    font-family: 'Balsamiq Sans', sans-serif;
+}
