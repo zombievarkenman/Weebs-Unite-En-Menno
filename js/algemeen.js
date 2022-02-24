@@ -75,3 +75,13 @@ function showPercentage() {
 }
 
 document.getElementById("antwoordPercentageButton").addEventListener("click",showPercentage);
+
+
+//delen
+function showDelen(){
+    let deeltal = parseInt(document.getElementById("deeltal").value);
+    let deler = parseInt(document.getElementById("deler").value);
+    let delerAntwoord = MathMate.delenUitrekenen(deeltal, deler);
+    document.getElementById("antwoordDelen").innerHTML = delerAntwoord;
+}
+document.getElementById("antwoordDelenButton").addEventListener("click", showDelen);
