@@ -69,9 +69,105 @@ function showPercentage() {
 document.getElementById("antwoordPercentageButton").addEventListener("click",showPercentage);
 
 //Kwadraten
-function showKwadraat() { 
-    let machtValue = parseInt(document.getElementById("maximale-kwadraat").value);
-    let machtAntwoord = MathMate.machtBerekening(machtValue);
-    document.getElementById("antwoordKwadraten").innerHTML = machtAntwoord;
+// function showKwadraat() { 
+//     let machtValue = parseInt(document.getElementById("maximale-kwadraat").value);
+//     let machtAntwoord = MathMate.machtBerekening(machtValue);
+//     document.getElementById("antwoordKwadraten").innerHTML = machtAntwoord;
+// }
+// document.getElementById("antwoordKwadratenButton").addEventListener("click",showKwadraat);d
+
+function optellenMenuSwitch() {
+    document.getElementById("optellenarticle").style.display = "block";
+    document.getElementById("aftrekkenarticle").style.display = "none";
+    document.getElementById("vermedigdvuldigenarticle").style.display = "none";
+    document.getElementById("delenarticle").style.display = "none";
+    document.getElementById("machtsverheffenarticle").style.display = "none";
+    document.getElementById("percentagearticle").style.display = "none";
+    document.getElementById("restwaardenarticle").style.display = "none";
+    document.getElementById("evenofonevenarticle").style.display = "none";
 }
-document.getElementById("antwoordKwadratenButton").addEventListener("click", showKwadraat);
+document.getElementById("optellenMenu").addEventListener("click",optellenMenuSwitch);
+
+function aftrekkenMenuSwitch() {
+    document.getElementById("optellenarticle").style.display = "none";
+    document.getElementById("aftrekkenarticle").style.display = "block";
+    document.getElementById("vermedigdvuldigenarticle").style.display = "none";
+    document.getElementById("delenarticle").style.display = "none";
+    document.getElementById("machtsverheffenarticle").style.display = "none";
+    document.getElementById("percentagearticle").style.display = "none";
+    document.getElementById("restwaardenarticle").style.display = "none";
+    document.getElementById("evenofonevenarticle").style.display = "none";
+}
+document.getElementById("aftrekkenMenu").addEventListener("click",aftrekkenMenuSwitch);
+
+function vermedigdvuldigenMenuSwitch() {
+    document.getElementById("optellenarticle").style.display = "none";
+    document.getElementById("aftrekkenarticle").style.display = "none";
+    document.getElementById("vermedigdvuldigenarticle").style.display = "block";
+    document.getElementById("delenarticle").style.display = "none";
+    document.getElementById("machtsverheffenarticle").style.display = "none";
+    document.getElementById("percentagearticle").style.display = "none";
+    document.getElementById("restwaardenarticle").style.display = "none";
+    document.getElementById("evenofonevenarticle").style.display = "none";
+}
+document.getElementById("vermedigdvuldigenMenu").addEventListener("click",vermedigdvuldigenMenuSwitch);
+
+function delenMenuSwitch() {
+    document.getElementById("optellenarticle").style.display = "none";
+    document.getElementById("aftrekkenarticle").style.display = "none";
+    document.getElementById("vermedigdvuldigenarticle").style.display = "none";
+    document.getElementById("delenarticle").style.display = "block";
+    document.getElementById("machtsverheffenarticle").style.display = "none";
+    document.getElementById("percentagearticle").style.display = "none";
+    document.getElementById("restwaardenarticle").style.display = "none";
+    document.getElementById("evenofonevenarticle").style.display = "none";
+}
+document.getElementById("delenMenu").addEventListener("click",delenMenuSwitch);
+
+function machtsverheffenMenuSwitch() {
+    document.getElementById("optellenarticle").style.display = "none";
+    document.getElementById("aftrekkenarticle").style.display = "none";
+    document.getElementById("vermedigdvuldigenarticle").style.display = "none";
+    document.getElementById("delenarticle").style.display = "none";
+    document.getElementById("machtsverheffenarticle").style.display = "block";
+    document.getElementById("percentagearticle").style.display = "none";
+    document.getElementById("restwaardenarticle").style.display = "none";
+    document.getElementById("evenofonevenarticle").style.display = "none";
+}
+document.getElementById("machtsverheffenMenu").addEventListener("click",machtsverheffenMenuSwitch);
+
+function percentageMenuSwitch() {
+    document.getElementById("optellenarticle").style.display = "none";
+    document.getElementById("aftrekkenarticle").style.display = "none";
+    document.getElementById("vermedigdvuldigenarticle").style.display = "none";
+    document.getElementById("delenarticle").style.display = "none";
+    document.getElementById("machtsverheffenarticle").style.display = "none";
+    document.getElementById("percentagearticle").style.display = "block";
+    document.getElementById("restwaardenarticle").style.display = "none";
+    document.getElementById("evenofonevenarticle").style.display = "none";
+}
+document.getElementById("percentageMenu").addEventListener("click",percentageMenuSwitch);
+
+function restwaardenMenuSwitch() {
+    document.getElementById("optellenarticle").style.display = "none";
+    document.getElementById("aftrekkenarticle").style.display = "none";
+    document.getElementById("vermedigdvuldigenarticle").style.display = "none";
+    document.getElementById("delenarticle").style.display = "none";
+    document.getElementById("machtsverheffenarticle").style.display = "none";
+    document.getElementById("percentagearticle").style.display = "none";
+    document.getElementById("restwaardenarticle").style.display = "block";
+    document.getElementById("evenofonevenarticle").style.display = "none";
+}
+document.getElementById("restwaardenMenu").addEventListener("click",restwaardenMenuSwitch);
+
+function evenofonevenMenuSwitch() {
+    document.getElementById("optellenarticle").style.display = "none";
+    document.getElementById("aftrekkenarticle").style.display = "none";
+    document.getElementById("vermedigdvuldigenarticle").style.display = "none";
+    document.getElementById("delenarticle").style.display = "none";
+    document.getElementById("machtsverheffenarticle").style.display = "none";
+    document.getElementById("percentagearticle").style.display = "none";
+    document.getElementById("restwaardenarticle").style.display = "none";
+    document.getElementById("evenofonevenarticle").style.display = "block";
+}
+document.getElementById("evenofonevenMenu").addEventListener("click",evenofonevenMenuSwitch);

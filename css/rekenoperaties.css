@@ -3,6 +3,103 @@
     padding: 0;
 }
 
-#optellenarticle{
+#rekenoperaties > article {
     background-color:#008AFF ;
+}
+
+#menurekenoperaties {
+    display: flex;
+    flex-direction: column;
+    background-color: #008AFF;
+    width: 15vw;
+    height: 85vh;
+}
+
+#menurekenoperaties > button {
+    width: 10vw;
+    background-color: #A2EFB1;
+    justify-content: space-evenly;
+    margin-bottom: 2.5vh;
+    margin-top: 1vh;
+    margin-left: 2.5vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 60px;
+}
+
+#rekenoperaties-alles {
+    display: flex;
+    flex-direction: row;
+}
+
+#rekenoperaties > article{
+    border-radius: 60px;
+    width: 40vw;
+    height: 50vh;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.input {
+    width: 15vw;
+    height: 10vh;
+    font-size: 2.5rem;
+}
+
+#rekenoperaties > article > button{
+    border-radius: 60px;
+    height: 5vh;
+    width: 10vw;
+    background-color: #A2EFB1;
+}
+
+#antwoordOptellen {
+    border-radius: 60px;
+    font-size: 2.5rem;
+    background-color: #A2EFB1;
+    text-align: center;
+}
+
+#rekenoperaties > article > p {
+    border-radius: 60px;
+    font-size: 2.5rem;
+    background-color: #A2EFB1;
+    text-align: center;
+}
+
+#optellenarticle {
+    display: block;
+}
+
+#aftrekkenarticle {
+    display: none;
+}
+
+#vermedigdvuldigenarticle {
+    display: none;
+}
+
+#delenarticle {
+    display: none;
+}
+
+#machtsverheffenarticle {
+    display: none;
+}
+
+#percentagearticle {
+    display: none;
+}
+
+#restwaardenarticle {
+    display: none;
+}
+
+#evenofonevenarticle {
+    display: none;
 }
