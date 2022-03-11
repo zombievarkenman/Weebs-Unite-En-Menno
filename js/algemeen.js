@@ -74,8 +74,20 @@ document.getElementById("antwoordPercentageButton").addEventListener("click",sho
 //     let machtAntwoord = MathMate.machtBerekening(machtValue);
 //     document.getElementById("antwoordKwadraten").innerHTML = machtAntwoord;
 // }
-// document.getElementById("antwoordKwadratenButton").addEventListener("click",showKwadraat);d
+// document.getElementById("antwoordKwadratenButton").addEventListener("click",showKwadraat);
 
+
+// //machten
+// function showmachten(){
+//     let grondgetalWaarden = parseInt(document.getElementById("grondgetal").value);
+//     let exponentWaarden = parseInt(document.getElementById("exponent").value);
+//     let machtenantwoord = MathMate.machtenUitrekenen(grondgetalWaarden,exponentWaarden);
+//     machtenantwoord = document.getElementById("antwoordmachten").innerHTML;
+// }
+
+// document.getElementById("antwoordmachtenbutton").addEventListener("click",showmachten);
+
+// menu voor reken operatoren
 function optellenMenuSwitch() {
     document.getElementById("optellenarticle").style.display = "block";
     document.getElementById("aftrekkenarticle").style.display = "none";

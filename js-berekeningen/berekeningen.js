@@ -44,9 +44,17 @@ const MathMate = {
         let antwoordQuotiënt = deeltal / deler;
         return antwoordQuotiënt;
     },
+
     machtUitrekenen: function machtBerekening(machtValue){
         let antwoordMacht = machtValue **2;
         return antwoordMacht;
+    },
+
+    machtenUitrekenen: function machtenberekening(grondgetalWaarden,exponentWaarden){
+        for(i = 0;i == exponentWaarden; i++) {
+            let antwoord = grondgetalWaarden;
+            return antwoord;
+        }
     }
 }
 
