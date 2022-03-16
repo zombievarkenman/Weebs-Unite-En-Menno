@@ -1,8 +1,14 @@
-Kwadraten
-function showKwadraat() { 
-    let machtValue = parseInt(document.getElementById("maximale-grondgetal").value);
+// Kwadraten
+function showKwadraat() {
+    document.getElementById("antwoordKwadraten").innerHTML = "";
+    let maximaleKwadraat = parseInt(document.getElementById("maximale-kwadraat").value);
+    for(let kwadraat = 0; kwadraat <= maximaleKwadraat; kwadraat ++){
+        let antwoordKwadraat = kwadraat ** 2;
+        let berekeningKwadraat = kwadraat + "^" + "2" + "=" + antwoordKwadraat + "<br>";
+        document.getElementById("antwoordKwadraten").innerHTML += berekeningKwadraat;
+    }
 }
-document.getElementById("antwoordKwadratenButton").addEventListener("click",showKwadraat);
+document.getElementById("antwoordKwadratenButton").addEventListener("click", showKwadraat);
 
 
 //machten
@@ -17,4 +23,4 @@ function showmachten(){
     }
 }
 
-document.getElementById("antwoordMachtverheffenButton").addEventListener("click",showmachten);
+document.getElementById("antwoordmachtenbutton").addEventListener("click",showmachten);
