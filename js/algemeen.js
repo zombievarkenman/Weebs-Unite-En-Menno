@@ -68,11 +68,17 @@ function showPercentage() {
 }
 document.getElementById("antwoordPercentageButton").addEventListener("click",showPercentage);
 
-Kwadraten
-function showKwadraat() { 
-    let machtValue = parseInt(document.getElementById("maximale-grondgetal").value);
+// Kwadraten
+function showKwadraat() {
+    document.getElementById("antwoordKwadraten").innerHTML = "";
+    let maximaleKwadraat = parseInt(document.getElementById("maximale-grondgetal").value);
+    for(let kwadraat = 0; kwadraat <= maximaleKwadraat; kwadraat ++){
+        let antwoordKwadraat = kwadraat ** 2;
+        let berekeningKwadraat = kwadraat + "^" + "2" + "=" + antwoordKwadraat + "<br>";
+        document.getElementById("antwoordKwadraten").innerHTML += berekeningKwadraat;
+    }
 }
-document.getElementById("antwoordKwadratenButton").addEventListener("click",showKwadraat);
+document.getElementById("antwoordKwadratenButton").addEventListener("click". showKwadraat);
 
 
 // //machten

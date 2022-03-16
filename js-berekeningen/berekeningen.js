@@ -55,7 +55,5 @@ const MathMate = {
             let antwoord = grondgetalWaarden;
             return antwoord;
         }
-    }
+    },
 }
-
-
