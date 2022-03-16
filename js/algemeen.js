@@ -73,7 +73,7 @@ function showKwadraat() {
         document.getElementById("antwoordKwadraten").innerHTML += berekeningKwadraat;
     }
 }
-document.getElementById("antwoordKwadratenButton").addEventListener("click". showKwadraat);
+document.getElementById("antwoordKwadratenButton").addEventListener("click", showKwadraat);
 
 
 // Machten
