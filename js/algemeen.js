@@ -68,13 +68,11 @@ function showPercentage() {
 }
 document.getElementById("antwoordPercentageButton").addEventListener("click",showPercentage);
 
-//Kwadraten
-// function showKwadraat() { 
-//     let machtValue = parseInt(document.getElementById("maximale-kwadraat").value);
-//     let machtAntwoord = MathMate.machtBerekening(machtValue);
-//     document.getElementById("antwoordKwadraten").innerHTML = machtAntwoord;
-// }
-// document.getElementById("antwoordKwadratenButton").addEventListener("click",showKwadraat);
+Kwadraten
+function showKwadraat() { 
+    let machtValue = parseInt(document.getElementById("maximale-grondgetal").value);
+}
+document.getElementById("antwoordKwadratenButton").addEventListener("click",showKwadraat);
 
 
 //machten
