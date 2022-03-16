@@ -10,7 +10,7 @@
 #menurekenoperaties {
     display: flex;
     flex-direction: column;
-    background-color: #008AFF;
+    background-color: #A2EFB1;
     width: 15vw;
     height: 85vh;
 }
@@ -25,6 +25,10 @@
     padding-top: 2vh;
     padding-bottom: 2vh;
     border-radius: 60px;
+}
+
+#menurekenoperaties > button:hover {
+    background-color: #008AFF;
 }
 
 #rekenoperaties-alles {

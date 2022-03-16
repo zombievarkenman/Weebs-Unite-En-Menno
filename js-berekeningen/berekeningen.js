@@ -50,12 +50,10 @@ const MathMate = {
         return antwoordMacht;
     },
 
-    machtenUitrekenen: function machtenberekening(grondgetalWaarden,exponentWaarden){
-        for(i = 0;i == exponentWaarden; i++) {
-            let antwoord = grondgetalWaarden;
-            return antwoord;
-        }
-    }
+    machtenUitrekenen: function machtenberekening(maximaleGrondgetal,exponent){
+        let berekening = maximaleGrondgetal ** exponent;
+        return berekening;
+    },
 }
 
 

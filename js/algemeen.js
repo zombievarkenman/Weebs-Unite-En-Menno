@@ -77,15 +77,19 @@ document.getElementById("antwoordPercentageButton").addEventListener("click",sho
 // document.getElementById("antwoordKwadratenButton").addEventListener("click",showKwadraat);
 
 
-// //machten
-// function showmachten(){
-//     let grondgetalWaarden = parseInt(document.getElementById("grondgetal").value);
-//     let exponentWaarden = parseInt(document.getElementById("exponent").value);
-//     let machtenantwoord = MathMate.machtenUitrekenen(grondgetalWaarden,exponentWaarden);
-//     machtenantwoord = document.getElementById("antwoordmachten").innerHTML;
-// }
+//machten
+function showmachten(){
+    document.getElementById("antwoordmachten").innerHTML = "";
+    let maximaleGrondgetal = parseInt(document.getElementById("grondgetal").value);
+    let maximaleExponent = parseInt(document.getElementById("exponent").value);
+    for (let exponent = 0; exponent <= maximaleExponent; exponent++){
+        let antwoordmachten = MathMate.machtenUitrekenen(maximaleGrondgetal,exponent);
+        let berekening = maximaleGrondgetal + " ^ " + exponent + " = " + antwoordmachten;
+        document.getElementById("antwoordmachten").innerHTML += berekening + "<br>";
+    }
+}
 
-// document.getElementById("antwoordmachtenbutton").addEventListener("click",showmachten);
+document.getElementById("antwoordMachtverheffenButton").addEventListener("click",showmachten);
 
 // menu voor reken operatoren
 function optellenMenuSwitch() {
