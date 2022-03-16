@@ -1,4 +1,4 @@
-//Even of oneven
+// Even of oneven
 function showEvenOfOneven(){
     let evenofonevenWaarden = document.getElementById("EvenOfOneven").value;
     let antwoordEvenOfOneven = MathMate.evenOfOnevenUitrekenen(evenofonevenWaarden);
@@ -6,7 +6,7 @@ function showEvenOfOneven(){
 }
 document.getElementById("antwoordEvenOfOnevenButton").addEventListener("click",showEvenOfOneven);
 
-//Restwaarden
+// Restwaarden
 function showRestwaarden(){
     let deeltalWaarden = parseInt(document.getElementById("RestwaardenDeeltal").value);
     let delerWaarden = parseInt(document.getElementById("RestwaardenDeler").value);
@@ -15,7 +15,7 @@ function showRestwaarden(){
 }
 document.getElementById("antwoordRestwaardenButton").addEventListener("click",showRestwaarden);
 
-//Optellen
+// Optellen
 function showOptellen(){
     let term1 = parseInt(document.getElementById("Optellen").value);
     let term2 = parseInt(document.getElementById("Optellen2").value);
@@ -24,12 +24,7 @@ function showOptellen(){
 }
 document.getElementById("antwoordOptellenButton").addEventListener("click", showOptellen);
 
-//Machtsverheffen
-document.getElementById("antwoordRestwaardenButton").addEventListener("click",showRestwaarden);
-// De gebruiker kan 2 getallen invoeren, het basis getalen het getal wat er iedere keer van af gehaald wordt, en als hij op de knop “Rest” klikt, dan moet derestwaardehiervan getoond worden.
-
-document.getElementById("antwoordMachtverheffenButton").addEventListener("click",showMachtsverheffen);
-//Aftrekken
+// Aftrekken
 function showAftrekken(){
     let aftrekker1 = parseInt(document.getElementById("Aftrekken").value);
     let aftrekker2 = parseInt(document.getElementById("Aftrekken2").value);
@@ -38,7 +33,7 @@ function showAftrekken(){
 }
 document.getElementById("antwoordAftrekkenButton").addEventListener("click", showAftrekken);
 
-//Vermenigvuldigen
+// Vermenigvuldigen
 function showVermenigvuldigen(){
     let vermenigvuldiger1 = parseInt(document.getElementById("Vermedigdvuldigen1").value);
     let vermenigvuldiger2 = parseInt(document.getElementById("Vermedigdvuldigen2").value);
@@ -47,7 +42,7 @@ function showVermenigvuldigen(){
 }
 document.getElementById("antwoordVermedigdvuldigenButton").addEventListener("click", showVermenigvuldigen);
 
-//Machtsverheffen berekeningen
+// Machtsverheffen
 function showMachtsverheffen(){
     let antwoordMachtsverheffen = machtsverheffenBerekening();
     document.getElementById("antwoordMachtverheffen").innerHTML = antwoordMachtsverheffen;
@@ -59,7 +54,7 @@ function machtsverheffenBerekening(){
     let machtsverheffenAntwoord = grondtal **= exponent;
 }
 
-//Percentage
+// Percentage
 function showPercentage() {
     let basisGetalvalue = parseInt(document.getElementById("basisGetal").value);
     let PercentageGetalvalue = parseInt(document.getElementById("PercentageGetal").value);
@@ -81,7 +76,7 @@ function showKwadraat() {
 document.getElementById("antwoordKwadratenButton").addEventListener("click". showKwadraat);
 
 
-//machten
+// Machten
 function showmachten(){
     document.getElementById("antwoordmachten").innerHTML = "";
     let maximaleGrondgetal = parseInt(document.getElementById("grondgetal").value);
