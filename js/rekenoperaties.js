@@ -63,8 +63,6 @@ function showPercentage() {
 }
 document.getElementById("antwoordPercentageButton").addEventListener("click",showPercentage);
 
-document.getElementById("antwoordMachtverheffenButton").addEventListener("click",showmachten);
-
 // menu voor reken operatoren
 function optellenMenuSwitch() {
     document.getElementById("optellenarticle").style.display = "block";

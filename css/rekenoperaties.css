@@ -38,8 +38,8 @@
 
 #rekenoperaties > article{
     border-radius: 60px;
-    width: 40vw;
-    height: 50vh;
+    width: 45vw;
+    height: 60vh;
     margin-left: 10vw;
     margin-top: 5vh;
     text-align: center;
@@ -62,20 +62,13 @@ h1 {
     background-color: #A2EFB1;
 }
 
-#antwoordOptellen {
-    border-radius: 60px;
-    font-size: 2.5rem;
-    background-color: #A2EFB1;
-    text-align: center;
-}
-
 #rekenoperaties > article > p {
     border-radius: 60px;
     font-size: 2.5rem;
     background-color: #A2EFB1;
     text-align: center;
-    width: 20vw;
-    margin-left: 25%;
+    width: 25vw;
+    margin-left: 25%; 
 }
 
 #optellenarticle {
