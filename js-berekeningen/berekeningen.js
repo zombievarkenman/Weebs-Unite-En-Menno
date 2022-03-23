@@ -25,7 +25,7 @@ const MathMate = {
     },
 
     machtsverheffenUitrekenen: function machtsverheffenBerekening(grondtal,exponent){ 
-        let machtsverheffenAntwoord = grondtal **= exponent;
+        let machtsverheffenAntwoord = grondtal ** exponent;
         return machtsverheffenAntwoord;
     },
 
