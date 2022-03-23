@@ -54,6 +54,10 @@ const MathMate = {
         let berekening = maximaleGrondgetal ** exponent;
         return berekening;
     },
+    kwadraatUitrekenen: function kwadraatBerekening(grondtal){
+        let antwoordKwadraat = grondtal ** 2;
+        return antwoordKwadraat;
+    },
 }
 
 

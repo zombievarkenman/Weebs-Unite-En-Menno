@@ -1,14 +1,22 @@
+//priemgetallen
 function showPriemgetallen() {
     document.getElementById("antwoordPriemGetallen").innerHTML = "";
-    priemgetallentot = parseInt(document.getElementById("priemgetallenTot").value);
-    for(let i = 2; i < priemgetallentot / 2; i++){
-        if (priemgetallentot % i == 0){
-            document.getElementById("antwoordPriemGetallen").innerHTML += "Dit is geen priem getal!";
-            break;
-        } else {
-            document.getElementById("antwoordPriemGetallen").innerHTML += "Dit is een priem getal!";
-            break;
+    let priemgetalmax = parseInt(document.getElementById("priemgetallenTot").value);
+    for(let getal = 2; getal < priemgetalmax; getal++){
+        if(priemgetalberekenen(getal)){
+            document.getElementById("antwoordPriemGetallen").innerHTML += priemgetal + "<br>";
         }
     }
+
 }
 document.getElementById("antwoordPriemGetallenButton").addEventListener("click",showPriemgetallen);
+
+function priemgetalberekenen(getal){
+    for(let deler = 2; deler < getal; deler++){
+        let restwaarde = getal % deler;
+        if(restwaarde == 0){
+            return false;
+        }
+    }
+    return true;
+}

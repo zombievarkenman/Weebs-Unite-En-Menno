@@ -2,9 +2,9 @@
 function showKwadraat() {
     document.getElementById("antwoordKwadraten").innerHTML = "";
     let maximaleKwadraat = parseInt(document.getElementById("maximale-kwadraat").value);
-    for(let kwadraat = 0; kwadraat <= maximaleKwadraat; kwadraat ++){
-        let antwoordKwadraat = kwadraat ** 2;
-        let berekeningKwadraat = kwadraat + "^" + "2" + "=" + antwoordKwadraat + "<br>";
+    for(let grondtal = 0; grondtal <= maximaleKwadraat; grondtal ++){
+        let macht = MathMate.kwadraatUitrekenen(grondtal);
+        let berekeningKwadraat = grondtal + "^" + "2" + "=" + macht + "<br>";
         document.getElementById("antwoordKwadraten").innerHTML += berekeningKwadraat;
     }
 }
