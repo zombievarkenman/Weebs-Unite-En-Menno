@@ -24,3 +24,11 @@ function showmachten(){
 }
 
 document.getElementById("antwoordmachtenbutton").addEventListener("click",showmachten);
+
+//tafels
+function showTafels(){
+    document.getElementById("antwoordtafelsbutton").innerHTML = "";
+    let tafelGetal1 = parseInt(document.getElementById("Tafels1").value);
+    let tafelGetal2 = parseInt(document.getElementById("Tafels2").value);
+
+}
