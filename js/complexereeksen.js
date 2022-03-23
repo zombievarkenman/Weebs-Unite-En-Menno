@@ -2,8 +2,8 @@
 function showPriemgetallen() {
     document.getElementById("antwoordPriemGetallen").innerHTML = "";
     let priemgetalmax = parseInt(document.getElementById("priemgetallenTot").value);
-    for(let priemgetal = 2; priemgetal < priemgetalmax; priemgetal++){
-        if(priemgetalberekenen(priemgetal)){
+    for(let getal = 2; getal < priemgetalmax; getal++){
+        if(priemgetalberekenen(getal)){
             document.getElementById("antwoordPriemGetallen").innerHTML += priemgetal + "<br>";
         }
     }
