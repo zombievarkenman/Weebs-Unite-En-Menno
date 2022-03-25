@@ -58,6 +58,11 @@ const MathMate = {
         let antwoordKwadraat = grondtal ** 2;
         return antwoordKwadraat;
     },
+
+    tafelsUitrekenen: function tafelBerekening(vermenigvuldiger, vermenigvuldigtal){
+        let antwoordTafels = vermenigvuldiger * vermenigvuldigtal;
+        return antwoordTafels;
+    },
 }
 
 
