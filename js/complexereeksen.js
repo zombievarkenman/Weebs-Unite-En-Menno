@@ -16,11 +16,11 @@ document.getElementById("antwoordPriemGetallenButton").addEventListener("click",
 // Collatz conjecture
 function showCollatz() {
     document.getElementById("antwoordCollatzGetallen").innerHTML = "";
-    let collatz = document.getElementById("collatzTot").value;
-    if(collatz % 2 == 0){
-        let collatzEven = collatz;
-    } else {
-        let collatzOneven = collatz;
+    let collatz = document.getElementById("collatzBegin").value;
+    let collatz2 = MathMate.collatzUitrekenen(collatz);
+    document.getElementById("antwoordCollatzGetallen").innerHTML = collatz2;
+    for(let getal = 0;  getal <= collatz, collatz2; getal ++){
+        let berekening = getal + "/" + collatz2 + "<br>";
     }
 }
 document.getElementById("antwoordCollatzGetallenButton").addEventListener("click", showCollatz);
