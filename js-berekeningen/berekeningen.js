@@ -58,6 +58,19 @@ const MathMate = {
         let antwoordKwadraat = grondtal ** 2;
         return antwoordKwadraat;
     },
+    collatzUitrekenen: function collatzBerekening(collatzEven, collatzOneven, collatz){
+        if(collatz == collatzEven){
+            let antwoordCollatzEven = collatz / 2;
+        } else {
+            let antwoordCollatzOneven = collatz * 3 + 1;
+        }
+    }
+    // collatzEvenUitrekenen: function collatzEvenBerekening(collatzEven){
+    //     let antwoordCollatzEven = collatzEven / 2;
+    //     return antwoordCollatzEven;
+    // },
+    // collatzOnevenUitrekenen: function collatzOnevenBerekening(collatzOneven){
+    //     let antwoordCollatzOneven = collatzOneven * 3 + 1;
+    //     return antwoordCollatzOneven;
+    // },
 }
-
-

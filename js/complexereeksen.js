@@ -12,3 +12,15 @@ function showPriemgetallen() {
     }
 }
 document.getElementById("antwoordPriemGetallenButton").addEventListener("click",showPriemgetallen);
+
+// Collatz conjecture
+function showCollatz() {
+    document.getElementById("antwoordCollatzGetallen").innerHTML = "";
+    let collatz = document.getElementById("collatzTot").value;
+    if(collatz % 2 == 0){
+        let collatzEven = collatz;
+    } else {
+        let collatzOneven = collatz;
+    }
+}
+document.getElementById("antwoordCollatzGetallenButton").addEventListener("click", showCollatz);
