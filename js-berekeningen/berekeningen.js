@@ -25,7 +25,7 @@ const MathMate = {
     },
 
     machtsverheffenUitrekenen: function machtsverheffenBerekening(grondtal,exponent){ 
-        let machtsverheffenAntwoord = grondtal **= exponent;
+        let machtsverheffenAntwoord = grondtal ** exponent;
         return machtsverheffenAntwoord;
     },
 
@@ -58,8 +58,11 @@ const MathMate = {
         let antwoordKwadraat = grondtal ** 2;
         return antwoordKwadraat;
     },
-    collatzUitrekenen: function collatzBerekening(getal){
-
+    tafelsUitrekenen: function tafelBerekening(vermenigvuldiger, vermenigvuldigtal){
+        let antwoordTafels = vermenigvuldiger * vermenigvuldigtal;
+        return antwoordTafels;
+    },
+        collatzUitrekenen: function collatzBerekening(getal){
         if(getal % 2 == 0){
             return getal / 2;
         } else {

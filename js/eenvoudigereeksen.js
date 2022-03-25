@@ -2,9 +2,9 @@
 function showKwadraat() {
     document.getElementById("antwoordKwadraten").innerHTML = "";
     let maximaleKwadraat = parseInt(document.getElementById("maximale-kwadraat").value);
-    for(let grondtal = 0; grondtal <= maximaleKwadraat; grondtal ++){
-        let macht = MathMate.kwadraatUitrekenen(grondtal);
-        let berekeningKwadraat = grondtal + "^" + "2" + "=" + macht + "<br>";
+    for(let kwadraat = 0; kwadraat <= maximaleKwadraat; kwadraat ++){
+        let antwoordKwadraat = kwadraat ** 2;
+        let berekeningKwadraat = kwadraat + "^" + "2" + "=" + antwoordKwadraat + "<br>";
         document.getElementById("antwoordKwadraten").innerHTML += berekeningKwadraat;
     }
 }
@@ -24,3 +24,18 @@ function showmachten(){
 }
 
 document.getElementById("antwoordmachtenbutton").addEventListener("click",showmachten);
+
+//tafels
+function showTafels(){
+    document.getElementById("antwoordtafels").innerHTML = "";
+    let maximaleVermenigvuldiger = parseInt(document.getElementById("vermenigvuldiger").value);
+    let vermenigvuldigtal = parseInt(document.getElementById("vermenigvuldigtal").value);
+
+    for (let vermenigvuldiger = 1; vermenigvuldiger <= maximaleVermenigvuldiger; vermenigvuldiger++){
+        let antwoordTafels = MathMate.tafelsUitrekenen(vermenigvuldiger, vermenigvuldigtal);
+        let berekeningTafels = vermenigvuldiger + " x "  + vermenigvuldigtal + " = " + antwoordTafels + "<br>";
+        document.getElementById("antwoordtafels").innerHTML += berekeningTafels; 
+    }
+
+}
+document.getElementById("antwoordtafelsbutton").addEventListener("click",showTafels);

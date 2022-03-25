@@ -44,15 +44,12 @@ document.getElementById("antwoordVermedigdvuldigenButton").addEventListener("cli
 
 // Machtsverheffen
 function showMachtsverheffen(){
-    let antwoordMachtsverheffen = machtsverheffenBerekening();
+    let grondtal = parseInt(document.getElementById("grondtal").value);
+    let exponent = parseInt(document.getElementById("exponent").value);
+    let antwoordMachtsverheffen = MathMate.machtsverheffenUitrekenen(grondtal,exponent);
     document.getElementById("antwoordMachtverheffen").innerHTML = antwoordMachtsverheffen;
 }
-
-function machtsverheffenBerekening(){ 
-    let grondtal = document.getElementById("grondtal").value;
-    let exponent = document.getElementById("exponent").value;
-    let machtsverheffenAntwoord = grondtal **= exponent;
-}
+document.getElementById("antwoordMachtverheffen").addEventListener("click",showMachtsverheffen);
 
 // Percentage
 function showPercentage() {
