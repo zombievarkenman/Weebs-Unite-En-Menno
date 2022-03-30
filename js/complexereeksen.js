@@ -11,7 +11,6 @@ function showPriemgetallen() {
 }
 document.getElementById("antwoordPriemGetallenButton").addEventListener("click",showPriemgetallen);
 
-<<<<<<< HEAD
 // Collatz conjecture
 function showCollatz() {
     document.getElementById("antwoordCollatzGetallen").innerHTML = "";
@@ -19,18 +18,7 @@ function showCollatz() {
     let collatz2 = MathMate.collatzUitrekenen(collatz);
     document.getElementById("antwoordCollatzGetallen").innerHTML = collatz2;
     for(let getal = 0;  getal <= collatz, collatz2; getal ++){
-        let berekening = getal + "/" + collatz2 + "<br>";
+
     }
 }
 document.getElementById("antwoordCollatzGetallenButton").addEventListener("click", showCollatz);
-=======
-function priemgetalberekenen(getal){
-    for(let deler = 2; deler < getal; deler++){
-        let restwaarde = getal % deler;
-        if(restwaarde == 0){
-            return false;
-        }
-    }
-    return true;
-}
->>>>>>> 3b5521e7df0e7c9b50c2425ded539d33a080709a
