@@ -62,11 +62,24 @@ const MathMate = {
         let antwoordTafels = vermenigvuldiger * vermenigvuldigtal;
         return antwoordTafels;
     },
-        collatzUitrekenen: function collatzBerekening(getal){
+    collatzUitrekenen: function collatzBerekening(getal){
         if(getal % 2 == 0){
             return getal / 2;
         } else {
             return getal * 3 + 1;
         }
+    },
+    priemUitrekenen: function priemgetalberekenen(getal){
+        for(let deler = 2; deler < getal; deler++){
+            let restwaarde = getal % deler;
+            if(restwaarde == 0){
+                return false;
+            }
+        }
+        return true;
+    },
+    breukenUitrekenen: function breukenberekenen(breuk) {
+        let antwoordBreuk = 1 / breuk;
+        return antwoordBreuk;
     },
 }
