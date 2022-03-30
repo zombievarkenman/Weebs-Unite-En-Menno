@@ -76,3 +76,19 @@ function berekeningromanizer(getal){
     }
     return romanizer;
 }
+
+function showFactorizer() {
+    document.getElementById("antwoordFactorizer").innerHTML = "";
+    let getal = parseInt(document.getElementById("Factorizer").value);
+    antwoord = berekeningFactorizer(getal);
+    document.getElementById("antwoordFactorizer").innerHTML = antwoord;
+    while(getal != 1){
+        getal = MathMate.factorizerUitrekenen(getal);
+        document.getElementById("antwoordFactorizer").innerHTML += getal + "<br>";
+    }
+}
+document.getElementById("antwoordFactorizerButton").addEventListener("click", showFactorizer);
+
+function berekeningFactorizer(getal){
+    
+}
