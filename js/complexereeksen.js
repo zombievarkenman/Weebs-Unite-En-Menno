@@ -3,13 +3,14 @@ function showPriemgetallen() {
     document.getElementById("antwoordPriemGetallen").innerHTML = "";
     let priemgetalmax = parseInt(document.getElementById("priemgetallenTot").value);
     for(let getal = 2; getal < priemgetalmax; getal++){
-        if(priemgetalberekenen(getal)){
-            document.getElementById("antwoordPriemGetallen").innerHTML += priemgetal + "<br>";
+        if(MathMate.priemUitrekenen(getal)){
+            document.getElementById("antwoordPriemGetallen").innerHTML += getal + "<br>";
         }
     }
 
 }
 document.getElementById("antwoordPriemGetallenButton").addEventListener("click",showPriemgetallen);
+
 
 // Collatz conjecture
 function showCollatz() {

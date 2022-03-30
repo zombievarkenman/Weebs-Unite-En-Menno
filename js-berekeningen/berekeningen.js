@@ -69,4 +69,13 @@ const MathMate = {
             return getal * 3 + 1;
         }
     },
+    priemUitrekenen: function priemgetalberekenen(getal){
+        for(let deler = 2; deler < getal; deler++){
+            let restwaarde = getal % deler;
+            if(restwaarde == 0){
+                return false;
+            }
+        }
+        return true;
+    },
 }
