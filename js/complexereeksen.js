@@ -4,7 +4,7 @@ function showPriemgetallen() {
     let priemgetalmax = parseInt(document.getElementById("priemgetallenTot").value);
     for(let getal = 2; getal < priemgetalmax; getal++){
         if(MathMate.priemUitrekenen(getal)){
-            document.getElementById("antwoordPriemGetallen").innerHTML += priemgetal + "<br>";
+            document.getElementById("antwoordPriemGetallen").innerHTML += getal + "<br>";
         }
     }
 
