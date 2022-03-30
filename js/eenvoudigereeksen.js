@@ -2,6 +2,7 @@
 function showKwadraat() {
     document.getElementById("antwoordKwadraten").innerHTML = "";
     let maximaleKwadraat = parseInt(document.getElementById("maximale-kwadraat").value);
+
     for(let kwadraat = 0; kwadraat <= maximaleKwadraat; kwadraat ++){
         let antwoordKwadraat = kwadraat ** 2;
         let berekeningKwadraat = kwadraat + "^" + "2" + "=" + antwoordKwadraat + "<br>";
@@ -16,6 +17,7 @@ function showmachten(){
     document.getElementById("antwoordmachten").innerHTML = "";
     let maximaleGrondgetal = parseInt(document.getElementById("grondgetal").value);
     let maximaleExponent = parseInt(document.getElementById("exponent").value);
+
     for (let exponent = 0; exponent <= maximaleExponent; exponent++){
         let antwoordmachten = MathMate.machtenUitrekenen(maximaleGrondgetal,exponent);
         let berekening = maximaleGrondgetal + " ^ " + exponent + " = " + antwoordmachten;
@@ -39,3 +41,16 @@ function showTafels(){
 
 }
 document.getElementById("antwoordtafelsbutton").addEventListener("click",showTafels);
+
+//breuken
+function showBreuken(){
+    document.getElementById("antwoordbreuken").innerHTML = "";
+    let maxbreuk = parseInt(document.getElementById("breuk").value);
+
+    for(let breuk = 1; breuk <= maxbreuk; breuk++){
+        let antwoordBreuken = MathMate.breukenUitrekenen(breuk);
+         let berekeningTafels = 1 + " / " + breuk + " = " + antwoordBreuken + "<br>";
+        document.getElementById("antwoordbreuken").innerHTML += berekeningTafels;
+    }
+}
+document.getElementById("antwoordbreukenbutton").addEventListener("click",showBreuken);

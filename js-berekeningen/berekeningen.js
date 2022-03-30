@@ -62,7 +62,7 @@ const MathMate = {
         let antwoordTafels = vermenigvuldiger * vermenigvuldigtal;
         return antwoordTafels;
     },
-        collatzUitrekenen: function collatzBerekening(getal){
+    collatzUitrekenen: function collatzBerekening(getal){
         if(getal % 2 == 0){
             return getal / 2;
         } else {
@@ -77,5 +77,9 @@ const MathMate = {
             }
         }
         return true;
+    },
+    breukenUitrekenen: function breukenberekenen(breuk) {
+        let antwoordBreuk = 1 / breuk;
+        return antwoordBreuk;
     },
 }
