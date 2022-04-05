@@ -29,3 +29,16 @@ function showFibonacci() {
     let term1 = document.getElementById("fibonacciBegin").value;
     let term2 = MathMate.fibonacciUitrekenen(Fibonacci);
 }
+
+//perfect number
+function showPerfectNumber(){
+    let getal = parseInt(document.getElementById("perfectNumberNumber").value);
+    let delers = MathMate.perfectNumberuitrekenen(getal);
+    let som = MathMate.perfectNumbersom(delers);
+    if(som == getal){
+        document.getElementById("antwoordPerfectNumber").innerHTML = delers.join("+") + " = " + som + "<br>" + "dit is een perfect getal";
+    } else {
+        document.getElementById("antwoordPerfectNumber").innerHTML = delers.join("+") + " = " + som + "<br>" + "dit is geen perfect getal";
+    }
+}
+document.getElementById("antwoordPerfectNumberButton").addEventListener("click", showPerfectNumber);

@@ -82,4 +82,21 @@ const MathMate = {
         let antwoordBreuk = 1 / breuk;
         return antwoordBreuk;
     },
+    perfectNumberuitrekenen: function berekenenPerfectNumber(getal){
+        let delers = [];
+        for(let deler = 1; deler < getal; deler++){
+            let restwaarde = getal % deler;
+            if(restwaarde == 0){
+                delers.push(deler);
+            }
+        }
+        return delers;
+    },
+    perfectNumbersom: function somPerfectNumber(delers){
+        let som = 0;
+        for(let i = 0; i < delers.length; i++){
+            som += delers[i];
+        }
+        return som;
+    }
 }
