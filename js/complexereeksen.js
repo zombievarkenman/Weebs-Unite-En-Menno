@@ -23,11 +23,17 @@ function showCollatz() {
     }
 }
 document.getElementById("antwoordCollatzGetallenButton").addEventListener("click", showCollatz);
-
+// Fibonacci
 function showFibonacci() {
     document.getElementById("antwoordFibonacciGetallen").innerHTML = "";
-    let term1 = document.getElementById("fibonacciBegin").value;
-    let term2 = MathMate.fibonacciUitrekenen(Fibonacci);
+    // code
+    let som = [0, 1]
+    term1 = 0
+    term2 = 1
+    
+    term1 + term2 = som
+    term2 = som
+    som = term1
 }
 
 //perfect number
@@ -42,3 +48,5 @@ function showPerfectNumber(){
     }
 }
 document.getElementById("antwoordPerfectNumberButton").addEventListener("click", showPerfectNumber);
+
+document.getElementById("antwoordFibonacciGetallenButton").addEventListener("click", showFibonacci);

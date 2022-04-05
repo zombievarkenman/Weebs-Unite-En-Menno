@@ -1,3 +1,4 @@
+//Romanizer
 function showromanizer(){
     document.getElementById("antwoordromanizer").innerHTML = "";
     let getal = parseInt(document.getElementById("romanizer").value);
@@ -65,18 +66,24 @@ function berekeningromanizer(getal){
     return romanizer;
 }
 
+//Factorizer
 function showFactorizer() {
     document.getElementById("antwoordFactorizer").innerHTML = "";
-    let getal = parseInt(document.getElementById("Factorizer").value);
-    antwoord = berekeningFactorizer(getal);
+    let getal = parseInt(document.getElementById("factorizer").value);
+    let antwoord = berekeningFactorizer(getal);
     document.getElementById("antwoordFactorizer").innerHTML = antwoord;
-    while(getal != 1){
-        getal = MathMate.factorizerUitrekenen(getal);
-        document.getElementById("antwoordFactorizer").innerHTML += getal + "<br>";
-    }
 }
 document.getElementById("antwoordFactorizerButton").addEventListener("click", showFactorizer);
 
 function berekeningFactorizer(getal){
-    
+    let factoren = [];
+    while(getal > 1){
+        for(let deler = 2; deler <= getal; deler++){
+            if(MathMate.priemUitrekenen(deler) && getal % deler == 0){
+                factoren.push(deler);
+                getal = getal / deler;
+            }
+        }
+    }
+    return factoren.join(" * ");
 }
