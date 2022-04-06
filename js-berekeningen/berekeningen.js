@@ -82,4 +82,7 @@ const MathMate = {
         let antwoordBreuk = 1 / breuk;
         return antwoordBreuk;
     },
+
+    fibonacciUitrekenen: function fibonacciBerekenen(){
+     
 }
