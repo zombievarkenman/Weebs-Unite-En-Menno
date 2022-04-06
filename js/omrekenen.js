@@ -9,18 +9,6 @@ document.getElementById("antwoordromanizerbutton").addEventListener("click",show
 function berekeningromanizer(getal){
     let romanizer = "";
     while(getal > 0){
-        // if(getal >= 9000){
-        //     romanizer += ;
-        //     getal -= 9000;
-        // } else
-        // if(getal >= 5000){
-        //     romanizer += ;
-        //     getal -= 5000;
-        // } else
-        // if(getal >= 4000){
-        //     romanizer += "";
-        //     getal -= 4000;
-        // } else
         if(getal >= 1000){
             romanizer += "M";
             getal -= 1000;
@@ -90,5 +78,9 @@ function showFactorizer() {
 document.getElementById("antwoordFactorizerButton").addEventListener("click", showFactorizer);
 
 function berekeningFactorizer(getal){
-    
+    MathMate.priemUitrekenen(getal);
+    for(let deler = 2; getal > deler; getal--){
+
+    }
 }
+
