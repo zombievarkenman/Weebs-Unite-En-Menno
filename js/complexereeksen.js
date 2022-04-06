@@ -23,9 +23,11 @@ function showCollatz() {
     }
 }
 document.getElementById("antwoordCollatzGetallenButton").addEventListener("click", showCollatz);
-
+// Fibonacci
 function showFibonacci() {
     document.getElementById("antwoordFibonacciGetallen").innerHTML = "";
-    let term1 = document.getElementById("fibonacciBegin").value;
-    let term2 = MathMate.fibonacciUitrekenen(Fibonacci);
+    // code
+    
+    }
 }
+document.getElementById("antwoordFibonacciGetallenButton").addEventListener("click", showFibonacci);
