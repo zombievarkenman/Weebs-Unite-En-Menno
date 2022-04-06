@@ -90,5 +90,9 @@ function showFactorizer() {
 document.getElementById("antwoordFactorizerButton").addEventListener("click", showFactorizer);
 
 function berekeningFactorizer(getal){
-    
+    MathMate.priemUitrekenen(getal);
+    for(let deler = 2; getal > deler; getal--){
+
+    }
 }
+
