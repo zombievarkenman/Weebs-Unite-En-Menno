@@ -27,7 +27,12 @@ document.getElementById("antwoordCollatzGetallenButton").addEventListener("click
 function showFibonacci() {
     document.getElementById("antwoordFibonacciGetallen").innerHTML = "";
     // code
+    let som = [0, 1]
+    term1 = 0
+    term2 = 1
     
-    }
+    term1 + term2 = som
+    term2 = som
+    som = term1
 }
 document.getElementById("antwoordFibonacciGetallenButton").addEventListener("click", showFibonacci);
