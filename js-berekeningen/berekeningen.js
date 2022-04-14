@@ -99,8 +99,4 @@ const MathMate = {
             som += delers[i];
         }
         return som;
-    }
-
-    fibonacciUitrekenen: function fibonacciBerekenen(){
-     
-}
+    }}
