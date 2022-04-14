@@ -53,7 +53,7 @@ document.getElementById("antwoordFibonacciGetallenButton").addEventListener("cli
 
 // Morsenizer
 function showMorsenizer() {
-    document.getElementById('morsenizerGetal').innerHTML = "";
+    document.getElementById('antwoordMorsenizer').innerHTML = "";
     let woord = document.getElementById('morsenizerGetal').value;
 
     for(let index = 0; index < woord.length; index++) {
